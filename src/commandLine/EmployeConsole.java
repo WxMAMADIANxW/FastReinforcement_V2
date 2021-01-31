@@ -13,7 +13,7 @@ import projet.GestionFastReinforcement;
 import projet.SauvegardeImpossible;
 
 public class EmployeConsole {
-	private GestionFastReinforcement gestionFastReinforcement;
+	
 	
 	
 	Menu employeConsole()  {
@@ -27,13 +27,13 @@ public class EmployeConsole {
 	}
 	
 	private Option afficherEmployes() {
-		return new Option("Afficher les employés","e",()->{System.out.println(gestionFastReinforcement.getEmployes());});
+		return new Option("Afficher les employés","e",()->{System.out.println(GestionFastReinforcement.getFastReinforcement().getEmployes());});
 	}
 	
 	private Option ajouterEmploye()   {
 		return new Option("Ajouter un employé","a",()->
 		{
-			gestionFastReinforcement.addEmploye(getString("renseignez votre nom: "), getString("renseignez votre telephone: "), getString("renseignez votre mail: "), 0, 0, 0);
+			GestionFastReinforcement.getFastReinforcement().addEmploye(getString("renseignez votre nom: "), getString("renseignez votre telephone: "), getString("renseignez votre mail: "), 0, 0, 0);
 		});
 	}
 	

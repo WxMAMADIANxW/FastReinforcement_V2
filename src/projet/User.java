@@ -1,6 +1,6 @@
 package projet;
 
-public class User {
+public class User implements Comparable<User>{
 	public String name;
 	public String tel;		
 	public String mail;
@@ -42,4 +42,19 @@ public class User {
 	public String getMail() {
 		return this.mail;
 	}
+
+
+
+	@Override
+	public int compareTo(User other) {
+		int cmp = this.getName().compareTo(other.getName());
+		if(cmp != 0)
+			return cmp;
+		return this.getName().compareTo(other.getName());
+
+	}
+	
+	
+	
+	
 }

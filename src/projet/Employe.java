@@ -5,6 +5,8 @@ import java.util.Collections;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
+
+
 public class Employe extends User {
 	private int idEmploye;
 	private SortedSet<Diplomes> diplomes;
@@ -78,6 +80,11 @@ public class Employe extends User {
 		this.scoreDifficulté = scoreDifficulté;
 	}
 	
+	
+	
+	
+	
+	@Override
 	public String toString() {
 		return " id|"+idEmploye+" | nom"+name;
 	}

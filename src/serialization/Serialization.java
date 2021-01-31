@@ -10,11 +10,11 @@ import projet.Employe;
 import projet.Entreprise;
 import projet.GestionFastReinforcement;
 import projet.Mission;
-import projet.Passerelle;
 import projet.SauvegardeImpossible;
-public class Serialization implements Passerelle {
+
+public class Serialization implements projet.Passerelle {
 	
-		private static final String FILE_NAME = "src/GestionFastReinforcement.srz";
+		private static final String FILE_NAME = "persistence.ser";
 		GestionFastReinforcement gestionFastReinforcement;
 		
 		public GestionFastReinforcement getGestionFastReinforcement()
@@ -45,8 +45,8 @@ public class Serialization implements Passerelle {
 			ObjectOutputStream OOS = null;
 			try
 			{
-				FileOutputStream FIS = new FileOutputStream(FILE_NAME);
-				OOS = new ObjectOutputStream(FIS);
+				FileOutputStream FOS = new FileOutputStream(FILE_NAME);
+				OOS = new ObjectOutputStream(FOS);
 				OOS.writeObject(this);
 			}
 			catch (IOException e)
