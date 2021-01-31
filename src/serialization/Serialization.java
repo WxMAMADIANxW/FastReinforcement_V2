@@ -14,7 +14,7 @@ import projet.Passerelle;
 import projet.SauvegardeImpossible;
 public class Serialization implements Passerelle {
 	
-		private static final String FILE_NAME = "GestionFastReinforcement.srz";
+		private static final String FILE_NAME = "src/GestionFastReinforcement.srz";
 		GestionFastReinforcement gestionFastReinforcement;
 		
 		public GestionFastReinforcement getGestionFastReinforcement()

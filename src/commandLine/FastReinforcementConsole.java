@@ -1,13 +1,16 @@
 package commandLine;
 
+import commandLine.EmployeConsole;
 import commandLineMenus.*;
 import projet.GestionFastReinforcement;
 import projet.SauvegardeImpossible;
+
+
 public class FastReinforcementConsole {
 	private static GestionFastReinforcement gestionFastReinforcement;
-	EmployeConsole employeConsole;
-	MissionConsole missionConsole;
-	EntrepriseConsole entrepriseConsole;
+	static EmployeConsole employeConsole;
+	static MissionConsole missionConsole;
+	static EntrepriseConsole entrepriseConsole;
 	
 	
 	public FastReinforcementConsole(GestionFastReinforcement gestionFastReinforcement)
@@ -26,6 +29,9 @@ public class FastReinforcementConsole {
 	
 	private static  Menu menuPrincipal() {
 		Menu menu = new Menu("Bienvenue sur FastReinforcement");
+		menu.add(employeConsole.employeConsole());
+		//menu.add(missionConsole.menuMission());
+		//menu.add(entrepriseConsole.menuEntreprise());
 		menu.add(quitterEtEnregistrer());
 		menu.add(quitterSansEnregistrer());
 		return menu;

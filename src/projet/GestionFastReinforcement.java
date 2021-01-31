@@ -7,7 +7,7 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 
-public class GestionFastReinforcement implements  Serializable{
+public class GestionFastReinforcement implements  Serializable {
 	private static final long serialVersionUID = 123456789L;
 	private static GestionFastReinforcement gestionFastReinforcement = null;
 	private SortedSet<Employe> employes;
