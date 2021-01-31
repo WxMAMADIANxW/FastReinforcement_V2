@@ -27,6 +27,7 @@ public class FastReinforcementConsole {
 	private static  Menu menuPrincipal() {
 		Menu menu = new Menu("Bienvenue sur FastReinforcement");
 		menu.add(quitterEtEnregistrer());
+		menu.add(quitterSansEnregistrer());
 		return menu;
 	}
 	
@@ -45,7 +46,11 @@ public class FastReinforcementConsole {
 						System.out.println("Impossible d'effectuer la sauvegarde");
 					}
 				}
-			);
+		);
+	}
+	
+	private static Option quitterSansEnregistrer() {
+		return new Option("Quitter sans enregistrer ", "a", Action.QUIT);
 	}
 
 	public static void main(String[] args) {
