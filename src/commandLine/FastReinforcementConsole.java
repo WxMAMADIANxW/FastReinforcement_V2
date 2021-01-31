@@ -1,21 +1,21 @@
 package commandLine;
 
-import commandLine.EmployeConsole;
 import commandLineMenus.*;
-import projet.GestionFastReinforcement;
+import projet.*;
 import projet.SauvegardeImpossible;
 
 
 public class FastReinforcementConsole {
-	private static GestionFastReinforcement gestionFastReinforcement;
+	private static  GestionFastReinforcement gestionFastReinforcement;
 	static EmployeConsole employeConsole;
-	static MissionConsole missionConsole;
-	static EntrepriseConsole entrepriseConsole;
+	MissionConsole missionConsole;
+	EntrepriseConsole entrepriseConsole;
 	
 	
+	@SuppressWarnings("static-access")
 	public FastReinforcementConsole(GestionFastReinforcement gestionFastReinforcement)
 	{
-		this.gestionFastReinforcement = gestionFastReinforcement;
+		FastReinforcementConsole.gestionFastReinforcement = gestionFastReinforcement;
 		this.employeConsole = new EmployeConsole();
 		this.missionConsole = new MissionConsole();
 		this.entrepriseConsole = new EntrepriseConsole();	 
@@ -49,7 +49,7 @@ public class FastReinforcementConsole {
 					} 
 					catch (SauvegardeImpossible e)
 					{
-						System.out.println("Impossible d'effectuer la sauvegarde");
+						System.out.println("Impossible d'effectuer la sauvegarde ");
 					}
 				}
 		);

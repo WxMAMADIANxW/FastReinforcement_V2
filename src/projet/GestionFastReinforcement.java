@@ -7,6 +7,7 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 
+
 public class GestionFastReinforcement implements  Serializable {
 	private static final long serialVersionUID = 123456789L;
 	private static GestionFastReinforcement gestionFastReinforcement = null;
@@ -41,11 +42,11 @@ public class GestionFastReinforcement implements  Serializable {
 	
 	public void sauvegarder() throws SauvegardeImpossible
 	{
-		passerelle.sauvegarderGestionPersonnel(this);
+		passerelle.sauvegarderGestionFastReinforcement(this);
 	}
 	
 	/*fonction d'ajout à une liste, suppression d'une liste , getter des listes  */
-	
+		
 	
 	public SortedSet<Employe> getEmployes(){
 		return Collections.unmodifiableSortedSet(employes);

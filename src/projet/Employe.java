@@ -86,7 +86,7 @@ public class Employe extends User {
 	
 	@Override
 	public String toString() {
-		return " id|"+idEmploye+" | nom"+name;
+		return " id: "+idEmploye+" | nom: "+name;
 	}
 	
 

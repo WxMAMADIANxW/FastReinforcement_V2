@@ -4,7 +4,7 @@ import java.sql.SQLException;
 
 public interface Passerelle {
 	public GestionFastReinforcement getGestionFastReinforcement();
-	public void sauvegarderGestionPersonnel(GestionFastReinforcement gestionFastReinforcement) throws SauvegardeImpossible;
+	public void sauvegarderGestionFastReinforcement(GestionFastReinforcement gestionFastReinforcement) throws SauvegardeImpossible;
 	public int insertMission (Mission mission) throws SauvegardeImpossible;
 	public int insertEntreprise(Entreprise entreprise) throws SauvegardeImpossible;
 	public int insertEmploye(Employe employe) throws SauvegardeImpossible;

@@ -40,7 +40,7 @@ public class Serialization implements projet.Passerelle {
 				}
 		}
 		
-		public void sauvegarderGestionPersonnel(GestionFastReinforcement gestionFastReinforcement) throws SauvegardeImpossible
+		public void sauvegarderGestionFastReinforcement(GestionFastReinforcement gestionFastReinforcement) throws SauvegardeImpossible
 		{
 			ObjectOutputStream OOS = null;
 			try
@@ -119,6 +119,8 @@ public class Serialization implements projet.Passerelle {
 			// TODO Auto-generated method stub
 			
 		}
+
+		
 		
 		
 		
